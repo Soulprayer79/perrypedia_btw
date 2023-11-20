@@ -10,18 +10,13 @@ addDays = timedelta(days=1)
 addWeek = timedelta(days=7)
 
 tTable = '{|class="perrypedia_std_table" style="background:#CDCDC1;" '
-tHeader = "! width=8,33% |<center>Jan'{0}</center>\n"
-tHeader = tHeader + "! width=8,33% |<center>Feb'{0}</center>\n"
-tHeader = tHeader + "! width=8,33% |<center>Mär'{0}</center>\n"
-tHeader = tHeader + "! width=8,33% |<center>Apr'{0}</center>\n"
-tHeader = tHeader + "! width=8,33% |<center>Mai'{0}</center>\n"
-tHeader = tHeader + "! width=8,33% |<center>Jun'{0}</center>\n"
-tHeader = tHeader + "! width=8,33% |<center>Jul'{0}</center>\n"
-tHeader = tHeader + "! width=8,33% |<center>Aug'{0}</center>\n"
-tHeader = tHeader + "! width=8,33% |<center>Sep'{0}</center>\n"
-tHeader = tHeader + "! width=8,33% |<center>Okt'{0}</center>\n"
-tHeader = tHeader + "! width=8,33% |<center>Nov'{0}</center>\n"
-tHeader = tHeader + "! width=8,33% |<center>Dez'{0}</center>\n"
+tHeader = "! width=12,5% |<center>Montag</center>\n"
+tHeader = tHeader + "! width=12,5% |<center>Dienstag</center>\n"
+tHeader = tHeader + "! width=12,5% |<center>Mittwoch</center>\n"
+tHeader = tHeader + "! width=12,5% |<center>Donnerstag</center>\n"
+tHeader = tHeader + "! width=12,5% |<center>Freitag</center>\n"
+tHeader = tHeader + "! width=12,5% |<center>Samstag</center>\n"
+tHeader = tHeader + "! width=12,5% |<center>Sonntag</center>\n"
 
 tVorlageBegin= "|----"
 tVorlageZF = "|<center>[[Vorlage:Hauptseite_Zitate_KW{0:02}_{1}|Zitat-{0:02}]]&nbsp;/&nbsp;[[Vorlage:Hauptseite_Fakten_KW{0:02}_{1}|Fakt-{0:02}]]</center>"
@@ -29,6 +24,7 @@ tVorlageTag = "|<center>[[Vorlage:Hauptseite_BTW_{0:02}_{1:02}_{2}|{0}.&nbsp;{3:
 tVorlageEnde = "|}"
 
 date_year = input('Eingabe des Jahres: ')
+schaltjahr = calendar.isleap(int(date_year))
 
 dt_checkKW = date(int(date_year), 1, 1)
 if dt_checkKW.weekday() == 3:
