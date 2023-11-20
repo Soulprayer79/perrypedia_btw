@@ -1,9 +1,13 @@
+# Ausführen in Konsole mit ./python ppbty.py (Linux) oder python.exe ppbty.py (Windows)
+
 import datetime
 import locale
 from datetime import date
 from datetime import timedelta
+#zum lokalen Ausführen auf eigenem PC diese Zeile aktivieren:
+#locale.setlocale(locale.LC_TIME, '')
 
-# Jahr festlegen
+#Jahr festlegen
 jahreingabe = input('Eingabe des Jahres: ')
 jahr = date(int(jahreingabe), 1, 1)
 
