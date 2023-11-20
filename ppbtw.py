@@ -18,7 +18,7 @@ tTable = tTable + "! width=12% |<center>Samstag</center>\n"
 tTable = tTable + "! width=12% |<center>Sonntag</center>"
 
 tVorlageBegin= "|----"
-tVorlageZF = "|<center>[[Vorlage:Hauptseite_Zitate_KW{0:02}_{1}|Zitat-{0:02}]]&nbsp;/&nbsp;[[Vorlage:Hauptseite_Fakten_KW{0:02}_{1}|Fakt-{0:02}]]</center>"
+tVorlageZF = "|<center>[[Vorlage:Hauptseite_Zitate_KW{0}_{1}|Zitat-{0}]]&nbsp;/&nbsp;[[Vorlage:Hauptseite_Fakten_KW{0}_{1}|Fakt-{0}]]</center>"
 tVorlageTag = "|<center>[[Vorlage:Hauptseite_BTW_{0:02}_{1:02}_{2}|{0}.&nbsp;{3:%B}]]</center>"
 tVorlageEnde = "|}"
 
